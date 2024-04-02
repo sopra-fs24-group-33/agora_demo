@@ -22,20 +22,29 @@ body{
     margin:0 auto;
 }
 
-.video-container{
+.video-container {
     max-height: 100%;
     border: 2px solid black;
     background-color: #203A49;
+    border-radius: 50%; /* Make the container circular */
+    overflow: hidden; /* Ensure content fits within the circular shape */
+    /* Adjust width and height to maintain aspect ratio */
+    width: 300px; /* Example width */
+    height: 300px; /* Make height equal to width for a perfect circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.video-player{
+.video-player {
     height: 100%;
     width: 100%;
+    object-fit: cover; /* Cover the area without losing aspect ratio */
 }
 
 button{
     border:none;
-    background-color: cadetblue;
+    background-color: #3d5d5e;
     color:#fff;
     padding:10px 20px;
     font-size:16px;
